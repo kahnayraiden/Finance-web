@@ -34,7 +34,7 @@ services:
     # Automatically sync DB schema, create default admin if needed, and start Next.js
     command: >
       sh -c "npx prisma db push --accept-data-loss &&
-             npx ts-node scripts/create-admin.ts || true &&
+             node scripts/create-admin.js || true &&
              npm start"
 
   worker:
