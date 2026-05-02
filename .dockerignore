@@ -7,3 +7,15 @@ README.md
 .next
 .git
 .env
+debug_*.ts
+debug_*.js
+test_*.ts
+test_*.js
+fetch_vcb.ts
+ocr_*.txt
+*.traineddata
+tessdata/
+vcb_*.txt
+pdf_parse_output.txt
+pdfjs_output.txt
+scratch/
