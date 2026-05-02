@@ -162,21 +162,21 @@ export async function fetchFinanceEmails(options?: {
   console.log(`[gmail] Fetching emails with query: ${query}`);
 
   let messages: any[] = [];
-  let pageToken: string | undefined = undefined;
+  let pageToken: string | undefined | null = undefined;
 
-    do {
-      const res = await gmail.users.messages.list({
-        userId: "me",
-        q: query,
-        maxResults: Math.min(maxResults - messages.length, 500),
-        pageToken,
-      });
+  do {
+    const res: any = await gmail.users.messages.list({
+      userId: "me",
+      q: query,
+      maxResults: Math.min(maxResults - messages.length, 500),
+      pageToken: pageToken as string | undefined,
+    });
 
-      if (res.data.messages) {
-        messages = messages.concat(res.data.messages);
-      }
-      pageToken = res.data.nextPageToken;
-    } while (pageToken && messages.length < maxResults);
+    if (res.data.messages) {
+      messages = messages.concat(res.data.messages);
+    }
+    pageToken = res.data.nextPageToken;
+  } while (pageToken && messages.length < maxResults);
 
     console.log(`[gmail] Found ${messages.length} matching messages`);
 
