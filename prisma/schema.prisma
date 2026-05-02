@@ -1,0 +1,89 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String         @id @default(uuid())
+  email         String         @unique
+  username      String?        @unique
+  password      String
+  name          String?
+  role          String         @default("user") // "admin" or "user"
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  creditCards   CreditCard[]
+  transactions  Transaction[]
+  categories    Category[]
+  subscriptions Subscription[]
+}
+
+model Category {
+  id          String        @id @default(uuid())
+  name        String
+  type        String        // "income" or "expense"
+  userId      String?
+  user        User?         @relation(fields: [userId], references: [id])
+  transactions Transaction[]
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+model Transaction {
+  id          String   @id @default(uuid())
+  amount      Float
+  type        String   // "income" or "expense"
+  categoryId  String?
+  category    Category? @relation(fields: [categoryId], references: [id])
+  userId      String?
+  user        User?     @relation(fields: [userId], references: [id])
+  note        String?
+  date        DateTime
+  source      String   // "manual" | "email" | "pdf"
+  externalId  String?  @unique // Hash of amount+date+description for deduplication
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Subscription {
+  id           String   @id @default(uuid())
+  name         String
+  amount       Float
+  billingCycle String   // "monthly" | "yearly"
+  startDate    DateTime
+  nextDueDate  DateTime
+  status       String   // "active" | "canceled"
+  userId       String?
+  user         User?    @relation(fields: [userId], references: [id])
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model CreditCard {
+  id           String                  @id @default(uuid())
+  name         String
+  limitAmount  Float
+  userId       String?
+  user         User?                   @relation(fields: [userId], references: [id])
+  transactions CreditCardTransaction[]
+  createdAt    DateTime                @default(now())
+  updatedAt    DateTime                @updatedAt
+}
+
+model CreditCardTransaction {
+  id          String     @id @default(uuid())
+  cardId      String
+  card        CreditCard @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  amount      Float
+  date        DateTime
+  description String
+  externalId  String?    @unique // Hash for deduplication
+  createdAt   DateTime   @default(now())
+}

@@ -1,0 +1,161 @@
+Vietcombank
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ Biên lai chuyển tiền qua tài khoản
+ (Payment Receipt)
+ | 
+ | 
+ | 
+ Ngày, giờ giao dịch
+ Trans. Date, Time
+ | 
+ | 
+ 18:44 Thứ Ba 14/04/2026
+ | 
+ | 
+ Số lệnh giao dịch
+ Order Number
+ | 
+ | 
+ 13792464938
+ | 
+ | 
+ Tài khoản nguồn
+ Debit Account
+ | 
+ | 
+ 1030790105
+ | 
+ | 
+ Tên người chuyển tiền
+ Remitter’s name
+ | 
+ | 
+ NGUYEN TIEN DAT
+ | 
+ | 
+ Tài khoản người hưởng
+ Credit Account
+ | 
+ | 
+ 0368096524
+ | 
+ | 
+ Tên người hưởng
+ Beneficiary Name
+ | 
+ | 
+ NGUYEN TIEN DAT
+ | 
+ | 
+ Tên ngân hàng hưởng
+ Beneficiary Bank Name
+ | 
+ | 
+ Ngân hàng Shinhan Bank Việt Nam
+ | 
+ | 
+ Số tiền
+ Amount
+ | 
+ | 
+ 2,400,000 VND
+ | 
+ | 
+ Loại phí
+ Charge Code
+ | 
+ | 
+ Người chuyển trả
+ Exclude 
+ | 
+ | 
+ Số tiền phí
+ Charge Amount
+Net income
+VAT
+ | 
+ | 
+ 0 VND
+0
+ VND
+0 VND
+ | 
+ | 
+ Nội dung chuyển tiền
+ Details of Payment
+ | 
+ | 
+ NGUYEN TIEN DAT chuyen tien
+ | 
+ | 
+ | 
+ Cám ơn Quý khách đã sử dụng dịch vụ của Vietcombank!
+Thank you for banking
+ with
+ Vietcombank!
+ | 
+ | 
+ Lưu
+ ý: Biên lai chuyển tiền này không thay cho các cam kết của NHTMCP Ngoại Thương
+ Việt
+ Nam về các nghĩa vụ của khách hàng được xác nhận với bên thứ ba.
+ This confirmation is not Vietcombank's commitment regarding customer's obligation with
+ third party.
+Để
+ đảm bảo an toàn khi giao dịch trực tuyến, Quý khách hãy thực hiện theo đúng hướng dẫn
+ giao dịch an toàn của
+ Vietcombank. Thông tin được cập nhật thường xuyên tại mục “Giao dịch an toàn”
+ trên
+ website của Vietcombank hoặc theo
+ hướng dẫn sau: 
+ - Bước 1: Truy cập ứng dụng VCB Digibank 
+ - Bước 2: chọn tính năng Hỗ trợ ngay tại màn hình đăng
+ nhập. 
+ - Bước 3: Chọn mục Giao dịch an toàn.
+To
+ ensure safety when transacting online, please follow Vietcombank's safe transaction
+ instructions. Information is
+ regularly updated in the "Safe Transaction" section on Vietcombank's website or
+ follow the instructions below: 
+ - Step 1: Access the VCB Digibank application 
+ - Step 2: Select the Support feature right on the login screen. 
+ - Step 3: Select the Safe Transaction section.
+ | 
+ Đây là email tự động. Quý khách vui lòng không phản hồi (reply) email này. Nếu cần hỗ trợ,
+ Quý khách vui lòng chat với VCB Digibot (trên ứng dụng VCB Digibank, website và fanpage
+ chính thức của Vietcombank); gọi điện đến hotline hoặc đến các điểm giao dịch của
+ Vietcombank (trong giờ hành chính).
+ | 
+ This is an automated email. Please do not reply to this email. If you need assistance,
+ please chat with VCB Digibot (on VCB Digibank app, Vietcombank's official website and
+ fanpage); call the hotline or visit Vietcombank's transaction points (during business
+ hours).
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ |
