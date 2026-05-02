@@ -16,6 +16,7 @@ services:
 
   web:
     build: .
+    image: finance-app-base
     container_name: finance_web
     restart: unless-stopped
     ports:
@@ -37,7 +38,7 @@ services:
              npm start"
 
   worker:
-    build: .
+    image: finance-app-base
     container_name: finance_worker
     restart: unless-stopped
     environment:
