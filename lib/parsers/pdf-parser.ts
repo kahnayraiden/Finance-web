@@ -380,7 +380,7 @@ export async function extractPdfText(buffer: Buffer): Promise<string> {
     
     // Use PSM 6 (SINGLE_BLOCK) which performs much better on dense tables
     await worker.setParameters({
-      tessedit_pageseg_mode: 6,
+      tessedit_pageseg_mode: 6 as any,
     });
 
     let fullText = "";
